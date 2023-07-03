@@ -140,7 +140,7 @@ define network::eth (
   Optional[Integer]                 $delay                            = undef,
   Optional[Boolean]                 $dhclient_ignore_gateway          = undef,
   Optional[Array[String]]           $dhclient_request_option_list     = undef,
-  Integer                           $dhclient_timeout                 = undef,
+  Optional[Integer]                 $dhclient_timeout                 = undef,
   Optional[String[1]]               $dhclient_vendor_class_identifier = undef,
   Optional[Simplib::Hostname]       $dhcp_hostname                    = undef,
   Optional[String[1]]               $dhcpclass                        = undef,
