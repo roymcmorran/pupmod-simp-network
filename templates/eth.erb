@@ -164,7 +164,7 @@
     if scope.call_function('versioncmp', [@operatingsystemmajrelease,'6']) < 0
       t_dhclientargs << "-T #{@dhclient_timeout}"
     else
-      t_dhclientargs << "-timeout #{@dhclient_timeout}"
+      t_dhclientargs << "--timeout #{@dhclient_timeout}"
     end
   end
 
